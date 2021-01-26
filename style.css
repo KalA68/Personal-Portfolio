@@ -128,7 +128,7 @@ main {
     }
 
 #projectsBox {
-    border: 5px solid black;
+    border: 5px solid white;
     text-align: center;
     width: 30%;
     margin-bottom: 3rem;
@@ -154,7 +154,9 @@ main {
     color: white;
     size: 1.5rem;
     }
-
+#email {
+    font-size: 48px;
+}
 /*settings for footer*/
 footer {
     background-color: #333;
