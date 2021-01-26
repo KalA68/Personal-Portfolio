@@ -1,1 +1,178 @@
 /*Stylesheet for Personal Portfolio*/
+
+/*Global settings*/
+html {
+    font-family: Raleway, "sans-serif";
+    font-size: 16px;
+    }
+
+body {
+    padding-top: 200px;
+    }
+
+/*Settings for header*/
+header {
+  background-color: #333;
+    position: fixed;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    top: 0;
+    }
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+    } 
+nav li {
+  display: inline;
+  float: right;
+    padding: 10px 10px;
+    }
+nav a {
+    color: white;
+    padding: 15px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    }
+
+nav {position: relative;
+    animation-name: nav;
+    animation-duration: 2s;
+    animation-delay: ;
+    animation-fill-mode: forwards;
+    }
+
+@keyframes nav {
+    0% {right: -500px;}
+    100% {right: 0;}
+    }
+    
+
+h1 {
+    font-size: 3rem;
+    color: white;
+    margin: 1rem;
+    }
+/*Animation of h1 on page load*/
+
+#firstNameSlideIn {
+    position: relative;
+    animation-name: firstName;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    }
+
+@keyframes firstName {
+    0% {left: -250px;}
+    100% {left: 0;}
+    }
+
+#lastNameSlideIn {
+    position: relative;
+    animation-name: lastName;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    }
+
+@keyframes lastName {
+    0% {top: -250px}
+    100% {top:0px;left:40px;}
+    }
+
+
+/* Styling for main part of body*/
+
+main {
+   display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-items:center;
+    margin-top: 10px;
+    
+    }
+.container1 { /*styling for box around aboutme*/
+    display: inline-flex;
+    justify-content:space-between;
+    width: 100%;
+    border-bottom: 5px solid #333;
+    }
+
+.container1 img {/*styling for image*/
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 20px;
+   }
+
+#aboutMe {
+    width: 50%;
+    padding-left: 5rem;
+    }
+
+.container2 {
+    border-bottom: 5px solid #333;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    }
+
+.container2 h2 {
+    text-align: center;
+    }
+
+.container3 {
+    display: flex;
+    justify-content: space-between;
+    }
+
+#projectsBox {
+    border: 5px solid black;
+    text-align: center;
+    width: 30%;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+    }
+
+#projectsBox img {
+    width: 50%;
+    }
+    
+ #projectsBox img:hover {
+    transform: scale(1.5,1.5);
+    }
+#lock {
+    /*.material-icons.md-48 {*/ font-size: 48px;
+}
+#contact {
+    padding-left: 10px;
+    padding-bottom: 20px;
+    }
+
+#contact a {
+    color: white;
+    size: 1.5rem;
+    }
+
+/*settings for footer*/
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    }
+
+/*settings for mobile*/
+@media only screen and (max-width:600px) {
+    
+    .container1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .container3 {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}

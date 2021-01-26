@@ -1,23 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <title>Personal Portfolio for Full Stack Engineer Kathleen Albert</title>
-    <link type="text/css" href="/style.css">
+    <link rel="stylesheet" href="style.css">
     
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    
+    <link type="script/JavaScript" href="script.js">
+
 </head>
 
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#aboutMe">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
 
-    <header></header>
+        <div id="firstNameSlideIn"><h1>Kathleen</h1></div>
+        <div id="lastNameSlideIn"><h1>Albert</h1>
+            <div id="ball"></div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container1">
+        
+        <div id="aboutMe">
+            <h2>About Me</h2>
+            <p>
+                Hi, I'm Kath and I'm almost halfway through the Full Stack Developer Course offered by Codecademy.
+                I am really enjoying the course and can't wait to get started on my new career.
+            </p>
 
+            <p>
+                I've worked in various admin roles but have always loved puzzles and languages.  The Covid 19 pandemic provided the 
+                perfect timing for me to make a career change. I'm so glad I did.
+            </p>
 
+            <p>
+                I am happily married to my husband of 27 years and a proud mother of 4 wonderful sons.  I love travel, great food and long walks in nature with our miniature Dachshund, Roxie.
+            </p>
 
-    <footer></footer>
+            </div>
+            <img src="/resources/KA1.jpeg">
+        </div>
 
+        <div class ="container2">
+            <h2>Projects</h2>
+                <div class="container3" id="projects">
+                    <div id="projectsBox">
+                    <h3>Project 1</h3>
+                    <img src="/resources/friendscook%20copy.jpg" alt="friends cooking">
+                        <p>Codecademy Responsive Web Design</p>
+                        <p>Club Website</p>
+                        <button type="button" onclick="#">View Project</button>
+                </div>
+                <div id="projectsBox">
+                    <h3>Project 2</h3>
+                    
+                    <img src="/resources/logo%20copy.jpg" alt="apple logo for new business website">
+                    <p>Codecademy Flex Box Project</p>
+                    <p>New Business Website</p>
+                    <button type="button" onclick="#">View Project</button>
+                </div>
+                <div id="projectsBox">
+                    <h3>Project 3</h3>
+                    <p>Under development</p>
+                    <p><span class="material-icons" id="lock">lock</span></p>
+                </div>
+                </div>
+        </div>
 
+        <div class="container1" id="box3">
+            <div id="skills">
+                <h2>Skills</h2>
+                <p>HTML 5, CSS 3, JavaScript, GitHub</p>
+                <p><i class="fa fa-github" aria-hidden="true"></i>
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js"></i></p>
+            </div>
+        </div>
+
+        <div class="container2" id="contact">
+            <h2>Contact</h2>
+            <p>Please get in touch, I'd love to hear from you.</p>
+            <a href="mailto:kathyalbert1@me.com"><i class="material-icons">email</i></a>
+            <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+        </div>
+    </main>
+
+    <footer>
+        <p>Created by Kathleen Albert</p>
+    </footer>
 </body>
-<script></script>
 
 </html>
