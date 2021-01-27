@@ -10,13 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
     
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
-    
-    <link type="script/JavaScript" href="script.js">
-
 </head>
 
-<body>
+<body onload="timeCoding()">
     <header>
         <nav>
             <ul>
@@ -34,9 +30,9 @@
     </header>
     
     <main>
-        <div class="container1">
         
-        <div id="aboutMe">
+        <div class="container1">        
+            <div id="aboutMe">
             <h2>About Me</h2>
             <p>
                 Hi, I'm Kath and I'm almost halfway through the Full Stack Developer Course offered by Codecademy.
@@ -81,15 +77,18 @@
                 </div>
                 </div>
         </div>
+        
+        <div class="timer">
+            <p>I've been happily coding for <span id="time-container">0</span> days!</p>
+        </div>
 
-        <div class="container1" id="box3">
+        <div class="container1">
             <div id="skills">
                 <h2>Skills</h2>
-                <p>HTML 5, CSS 3, JavaScript, GitHub</p>
-                <p><i class="fa fa-github" aria-hidden="true"></i>
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3-alt"></i>
-                <i class="fab fa-js"></i></p>
+                <img src="resources/iconhtml-5.png">
+                <img src="resources/iconcss-3.png">
+                <img src="resources/iconjs.png">
+                <img src="resources/icongithub.png">
             </div>
         </div>
 
@@ -104,6 +103,22 @@
     <footer>
         <p>Created by Kathleen Albert</p>
     </footer>
+    
+    <script>
+        const todaySec = new Date().getTime();
+        const startCodeSec = new Date (2020, 09, 01).getTime();
+        
+        const diff = todaySec - startCodeSec;
+        
+        const timeCoding(diff) => {
+            const days = Math.floor(diff / (24*60*60*1000));
+            return days;
+        
+            document.getElementById("time-container").innerHTML = days;  
+        }
+    
+  </script>
 </body>
-
+    
+    
 </html>

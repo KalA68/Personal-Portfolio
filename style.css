@@ -145,9 +145,22 @@ main {
 #lock {
     /*.material-icons.md-48 {*/ font-size: 48px;
 }
+
+.timer {
+    padding: 10px;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bolder;
+    width: 100%
+}
+#skills {
+    padding-left: 5rem;
+}
+
 #contact {
     padding-left: 10px;
     padding-bottom: 20px;
+    text-align: center;
     }
 
 #contact a {
