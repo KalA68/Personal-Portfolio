@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-<body onload="timeCoding()">
+<body onload="timeCoding(diff)">
     <header>
         <nav>
             <ul>
@@ -63,12 +63,11 @@
                         <button type="button" onclick="#">View Project</button>
                 </div>
                 <div id="projectsBox">
-                    <h3>Project 2</h3>
-                    
+                    <h3>Project 2</h3>                   
                     <img src="/resources/logo%20copy.jpg" alt="apple logo for new business website">
                     <p>Codecademy Flex Box Project</p>
                     <p>New Business Website</p>
-                    <button type="button" onclick="#">View Project</button>
+                    <a href="https://github.com/KalA68/HolisticHealth/blob/master/index.html">View Project</a>
                 </div>
                 <div id="projectsBox">
                     <h3>Project 3</h3>
@@ -110,9 +109,8 @@
         
         const diff = todaySec - startCodeSec;
         
-        const timeCoding(diff) => {
+        const timeCoding = diff => {
             const days = Math.floor(diff / (24*60*60*1000));
-            return days;
         
             document.getElementById("time-container").innerHTML = days;  
         }
